@@ -5,28 +5,23 @@ body {
 #header {
     background-color: #022859;
     color: rgb(191, 184, 186);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     padding: 10px 20px;
 }
 
 #titulo-unison {
-    font-size: 25px;
+    font-size: 50px;
     color: #F2EA79;
-    margin: 0;
     font-weight: bold;
     text-shadow: 2px 2px 5px #f2DF80;
     font-family: 'Georgia', serif;
 }
 
-#eslogan-unison {
-    font-size: 15px;
+#titulo-pagina {
+    font-size: 20px;
     color: #BFB8BA;
-    margin: 0;
     font-style: italic;
     font-family: 'Georgia', serif;
 }
-
 
 

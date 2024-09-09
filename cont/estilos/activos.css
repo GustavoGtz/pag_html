@@ -1,0 +1,38 @@
+body {
+    background-color: #BFB5BA;
+}
+
+
+
+/* Layout usando Flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para los bloques */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de sección */
+}
+
+/* Columnas laterales */
+.column.side {
+    flex: 1; /* Las columnas laterales ocuparán 1 parte cada una */
+    margin: 10px; /* Espacio a los lados de las columnas */
+}
+
+/* Columna central */
+.column.middle {
+    flex: 2; /* La columna central ocupará 2 partes */
+    margin: 10px; /* Espacio a los lados de las columnas */
+}
+
+/* Layout responsive */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    flex: 100%; /* Las columnas ocuparán todo el ancho en pantallas pequeñas */
+    max-width: 100%;
+  }
+}
+
