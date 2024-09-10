@@ -1,0 +1,96 @@
+/* Estilos generales para la página */
+body {
+    background-color: #A68C8A;
+}
+
+/* Layout utilizando Flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para las columnas laterales */
+.column.side {
+    flex: 1; 
+    margin: 10px; 
+}
+
+img{
+    width: auto;
+    height: auto;
+    
+}
+
+
+/* Estilo para la columna central */
+.column.middle {
+    flex: 2; 
+    margin: 10px; 
+}
+
+/* Pseudo-clase adicional: Estilo para los enlaces visitados */
+.navbar a:visited {
+    color: white;
+}
+
+/* Pseudo-elemento ::before en los encabezados */
+h2::before {
+    content: "➡️ ";
+    color: #022859;
+}
+
+/* Pseudo-elemento ::after en los enlaces */
+a::after {
+    content: " ⤴";
+    font-size: 12px;
+    color: #022859;
+}
+
+/* Layout responsive */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    flex: 100%; 
+    max-width: 100%;
+  }
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #022859;
+    color: rgb(191, 184, 186);
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #A68C8A;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #F2EA79;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 5px;
+}

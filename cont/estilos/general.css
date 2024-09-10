@@ -59,3 +59,39 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+
+/* Footer Styles */
+#footer {
+    background-color: #022859;
+    color: rgb(191, 184, 186);
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #A68C8A;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #F2EA79;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
