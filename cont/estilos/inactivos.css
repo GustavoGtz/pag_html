@@ -34,23 +34,12 @@ img{
     margin: 10px; 
 }
 
-/* Pseudo-clase adicional: Estilo para los enlaces visitados */
-.navbar a:visited {
-    color: white;
-}
-
 /* Pseudo-elemento ::before en los encabezados */
 h2::before {
     content: "➡️ ";
     color: #022859;
 }
 
-/* Pseudo-elemento ::after en los enlaces */
-a::after {
-    content: " ⤴";
-    font-size: 12px;
-    color: #022859;
-}
 
 /* Layout responsive */
 @media screen and (max-width: 600px) {
