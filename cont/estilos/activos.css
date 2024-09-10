@@ -1,38 +1,53 @@
+/* Configuración general de la página */
 body {
-    background-color: #BFB5BA;
+    background-color: #BFB5BA; /* Color de fondo gris claro */
 }
 
+p {
+    font-style: oblique; /* Estilo de letra inclinado */
+}
 
+li:hover {
+    color: #F2EA79; /* Color amarillo claro al hacer hover */
+}
 
-/* Layout usando Flexbox */
+img:hover {
+    opacity: 0.5; /* Reduce la opacidad al 50% al hacer hover */
+}
+
+#lista-requisitos {
+    color: #022859; /* Color azul oscuro para los requisitos */
+}
+
+/* Diseño principal utilizando Flexbox */
 .row {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en múltiples filas si es necesario */
 }
 
+/* Estilo base para todas las columnas */
 .column {
     padding: 20px;
     background-color: #ffffff; /* Fondo blanco para los bloques */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de sección */
 }
 
-/* Columnas laterales */
+/* Columnas laterales que ocupan 1 parte del espacio */
 .column.side {
-    flex: 1; /* Las columnas laterales ocuparán 1 parte cada una */
-    margin: 10px; /* Espacio a los lados de las columnas */
+    flex: 1;
+    margin: 10px;
 }
 
-/* Columna central */
+/* Columna central que ocupa 2 partes del espacio */
 .column.middle {
-    flex: 2; /* La columna central ocupará 2 partes */
-    margin: 10px; /* Espacio a los lados de las columnas */
+    flex: 2;
+    margin: 10px;
 }
 
-/* Layout responsive */
+/* Diseño responsive para pantallas pequeñas */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
-    flex: 100%; /* Las columnas ocuparán todo el ancho en pantallas pequeñas */
+    flex: 100%; /* Las columnas ocuparán todo el ancho */
     max-width: 100%;
   }
 }
-

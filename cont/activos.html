@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro de Ayuda a Estudiantes - Activos</title>
+    <!-- Enlaces a las hojas de estilos -->
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/activos.css">
   </head>
   
   <body>
-    <!-- Cabecera -->
+    <!-- 
+      Esta página está diseñada para proporcionar información y requisitos 
+      a los estudiantes activos de la Licenciatura en Ciencias de la Computación 
+      en la Universidad de Sonora. Aquí pueden consultar los requisitos de egreso y 
+      titulación, así como obtener enlaces a recursos oficiales.
+    -->
+
+    <!-- Cabecera con el título de la universidad y de la página -->
     <header id="header">
       <div id="titulo-unison">
         UNIVERSIDAD DE SONORA
@@ -19,7 +27,7 @@
       </div>       
     </header>
     
-    <!-- Barra de Navegación -->
+    <!-- Barra de navegación con enlaces a distintas secciones del sitio -->
     <nav class="navbar">
       <ul>
         <li><a href="inicio.html">Inicio</a></li>
@@ -29,6 +37,7 @@
       </ul>
     </nav>
     
+    <!-- Contenedor principal utilizando Flexbox con tres columnas -->
     <div class="row">
       <!-- Columna: Requisitos de Egreso -->
       <div class="column side">
@@ -41,7 +50,7 @@
       <div class="column middle">
         <h2>Requisitos de Titulación</h2>
         <p>Para obtener el título de Licenciado en Ciencias de la Computación, los estudiantes deben presentar y aprobar una de las opciones de titulación, tales como:</p>
-        <ul>
+        <ul id="lista-requisitos">
           <li>Tesis o trabajo de investigación</li>
           <li>Examen general de conocimientos</li>
           <li>Desarrollo de software profesional</li>
@@ -59,7 +68,8 @@
 	</a>
       </div>
     </div>
-    <!-- Pie de Página -->
+    
+    <!-- Pie de Página con información de derechos de autor y redes sociales -->
     <footer id="footer">
       <p>&copy; 2024 Universidad de Sonora | Licenciatura en Ciencias de la Computación</p>
       <p>Síguenos en 
