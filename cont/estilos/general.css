@@ -1,11 +1,18 @@
-*{
+/* 
+   Hoja de estilos para uso general en todo el sitio web
+*/
+
+/* Aplicación de box-sizing a todos los elementos */
+* {
     box-sizing: border-box;
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
     margin: 0;
 }
 
+/* Encabezado (Header) */
 #header {
     background-color: #022859;
     color: rgb(191, 184, 186);
@@ -28,6 +35,7 @@ body {
     font-family: 'Georgia', serif;
 }
 
+/* Barra de navegación */
 .navbar {
     background-color: #022859;
     overflow: hidden;
@@ -55,13 +63,20 @@ body {
     text-decoration: none;
 }
 
+/* Efecto hover en enlaces de navegación */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
+/* Pseudo-elemento ::after en los enlaces */
+a::after {
+    content: " ⤴";
+    font-size: 12px;
+    color: #022859;
+}
 
-/* Footer Styles */
+/* Footer */
 #footer {
     background-color: #022859;
     color: rgb(191, 184, 186);
@@ -72,7 +87,6 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    box-sizing: border-box;
 }
 
 #footer p {
